@@ -33,6 +33,8 @@ spec:
       containers:
       - name: nginx
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+        volumeMounts:
+           - name: appdata
         ports:
         - containerPort: 80
 
