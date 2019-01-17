@@ -35,6 +35,7 @@ spec:
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
         volumeMounts:
            - name: appdata
+           - mountPath: /var/www/magento
         ports:
         - containerPort: 80
 
